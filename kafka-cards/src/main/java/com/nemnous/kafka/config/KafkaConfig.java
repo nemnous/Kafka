@@ -25,6 +25,7 @@ import com.nemnous.kafka.bean.Card;
 @EnableKafka
 public class KafkaConfig {
 	
+	/** comma seperated kafka server hosts */
     private static final String BOOTSTRAP_SERVER = "127.0.0.1:9092";
 
     /** Kafka producer Config */
