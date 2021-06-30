@@ -55,7 +55,7 @@ public class KafkaConfig {
         config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVER);
         config.put(ConsumerConfig.GROUP_ID_CONFIG, "cards"); // used in the kafka listener. There can be different
                                                                 // topics under each group
-        config.put(JsonDeserializer.TRUSTED_PACKAGES, "com.connectpay.kafka.bean");
+        config.put(JsonDeserializer.TRUSTED_PACKAGES, "com.nemnous.kafka.bean");
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
         return new DefaultKafkaConsumerFactory<>(config);
